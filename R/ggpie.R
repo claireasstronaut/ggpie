@@ -27,7 +27,7 @@ ggpie <- function(df, .x, .y, .offset = 1, .color = "white", .number = TRUE,
   df_plot[[.x]] <- forcats::fct(df_plot[[.x]])
   df_plot$perc <- with(df_plot, round(get(.y) / sum(get(.y)) * 100, .round))
   df_plot$label <- df_plot[[.x]]
-  if (.number) df_plot$label <- with(df_plot, paste0(label, "\n", prettyNum(get(.y), ",")))
+  if (.number) df_plot$label <- with(df_plot, paste0(label, ": ", prettyNum(get(.y), ",")))
   if (.percent) df_plot$label <- with(df_plot, paste0(label, "\n(", perc, " %)"))
   df_plot$y <- with(df_plot, (sum(get(.y)) - cumsum(get(.y)) + get(.y)/2))
 
