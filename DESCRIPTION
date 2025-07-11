@@ -4,9 +4,9 @@ Title: Draw a pie chart
 Version: 0.1.0
 Authors@R: c(
     person(
-      "Shanlong Ding",
+      "Shanlong", "Ding",
       email = "dings@who.int",
-      role = c("aut")
+      role = c("aut", "cre")
     )
   )
 Description: Draw a pie chart in ggplot2 style.
