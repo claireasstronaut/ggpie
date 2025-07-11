@@ -1,0 +1,20 @@
+Package: ggpie
+Type: Package
+Title: Draw a pie chart
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Shanlong Ding",
+      email = "dings@who.int",
+      role = c("aut")
+    )
+  )
+Description: Draw a pie chart in ggplot2 style.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    cowplot,
+    forcats,
+    ggplot2
+RoxygenNote: 7.3.2
