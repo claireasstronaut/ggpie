@@ -19,7 +19,7 @@
 
 ggpie <- function(df, .x, .y, .offset = 1, .color = "white", .number = TRUE,
                   .legend = FALSE, .round = 1, .percent = TRUE, .start = 0,
-                  .textcolor = "white") {
+                  .textcolor = "white", .title = "") {
   .x <- as.character(substitute(.x))
   .y <- as.character(substitute(.y))
   df_plot <- df
@@ -43,5 +43,5 @@ ggpie <- function(df, .x, .y, .offset = 1, .color = "white", .number = TRUE,
       axis.line = ggplot2::element_blank()
     ) +
     {if (!.legend) ggplot2::theme(legend.position = "none")} +
-    ggplot2::labs(x = "", y = "")
+    ggplot2::labs(x = "", y = "", title = .title)
 }
